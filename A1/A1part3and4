@@ -1,0 +1,35 @@
+COMPSCI314 Question Set Provider
+
+Question set for AUID 8260026
+
+Note: Before you answer the questions below, please re-check that the AUID above is correct!
+
+Questions for Part 3
+
+A power ratio of 1,000,000,000,000:1 corresponds to ... dB?  120dB
+ 
+-6 dB correspond to a power ratio of ....?  -6dB = (-3dB) + (-3dB) = 0.5*0.5 = 0.25
+ 
+-5 dB correspond to a power ratio of ....?  -5dB = (-3dB) + (-3dB) + (-3dB) + (-3dB) + (-3dB) + (10dB) = 0.5*0.5*.0.5*0.5*0.5*10 = 0.3125
+ 
+A power ratio of 49000:1 corresponds to ... dB?  49000 ~= 50,000 = 5*10,000 = 0.5*100,000 = -3dB + 50dB = 47dB
+ 
+A power ratio of 0.00015 corresponds to ... dB?  0.00015 ~= 0.000125 = 1.25 * 0.00001 = (10/2*2*2) * 0.1*0.1*0.1*0.1 = (10dB-3dB-3dB-3dB) + (-10dB) + (-10dB) + (-10dB) + (-10dB) = -38dB
+ 
+28 dB correspond to a power ratio of ....? 28dB = 3dB + 3dB + 3dB + 3dB + 3dB + 3dB + 10dB = 2*2*2*2*2*2*10 = 640
+ 
+A voltage ratio of 5.2:1 corresponds to ... dB? 5.2~= 5 = 10/2 = 20dB - 6dB = 14dB
+ 
+A voltage ratio of 2.3:1 corresponds to ... dB? 
+ 
+Questions for Part 4
+
+You work for an international consultancy implementing communication solutions for governments all over the world. The government of Molvania wishes to establish a radio-based data link between two of its police bases. It has invited your company to tender of the implementation of a coding and modulation scheme for the link. In its tender documents, the Molvanian Communications Commission has assigned the frequency band between 182 MHz and 182.1351 MHz for the project.
+
+Based on the specifications for the transmitter and antennas to be used, as well as the distance between the bases, you calculate that the received power will be around 14 pW.
+
+You submit a tender and the government offers you the contract. The small print of the project says that contractors will have to stay in a secure guest room in one of the police bases until the project is finished to specification and handed over in working order. Also, the government states that the noise power measured in the band at the receiving sites is 0.52 fW. The bit rate to be achieved is 1 Mbps. You estimate that your company's technology will be able to achieve half of the capacity given by the Shannon-Hartley theorem. Should you sign the contract? Justify your answer. No. B = (182.1351 - 182)MHz = 0.1351MHz  S = 14pW N = 0.52fw C = 0.1351 log2 (14/0.52 * 1000 + 1) = 0.1351 log2 (26.923 * 1000 + 1) = 0.1351 log2 (26924) = 0.1351 * 14.72 = 1.989 Mbps  As the company only be able to achieve half of the capacity, which is 0.994 Mbps < 1 Mbps
+
+The government of Molvania has bought equipment from your company that operates a data link at 100 kb/s in a band from 322 MHz to 322.0238 MHz. The goverment is happy and reports that it is operating quite satisfactorily. Given that your equipment can only use half the channel capacity, can you give an estimate for the signal-to-noise ratio (SNR) that is achieved or exceeded at the receiver (to the closest whole dB)? Show your working.
+
+A measurement of the actual SNR at the receiver in question 2 reveals that it is 61 dB. Embez Elment, the brother-in-law of the Molvanian prime minister, would like run a private 500 kb/s data link for his game server between the same sites and using the same transmitter equipment, but using twice the bandwidth of the existing link. You know that this means that its receiver would receive approximately the same power from the transmitter, but that the SNR would decrease by the same factor by which the bandwidth would increase, i.e. by half, because you are now capturing twice as much noise. Would this work? Explain why (or why not). Show your working. Note: Again, assume that your technology will only be able to reach half the channel capacity.
