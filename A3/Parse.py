@@ -8,7 +8,7 @@ Created on 2015. 7. 13.
 import datetime
 import re
 import math
-from dateutil.relativedelta import relativedelta
+
 
 class Parser:
     
